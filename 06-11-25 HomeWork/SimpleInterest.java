@@ -5,7 +5,7 @@ class SimpleInterest
 		SimpleInterest s=new SimpleInterest();
 		double principal = 10000;  
         double rate = 5;           
-        double days = 180;         
+        double days = 60;         
 
         double SI =s.simple(principal, rate, days);
 
@@ -20,4 +20,5 @@ class SimpleInterest
         double simple = (principal*rate*years)/100;
         return simple;
 	}
+
 }
