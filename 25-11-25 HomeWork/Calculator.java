@@ -3,26 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SpeedCalculator;
+package CalculatorConstructor;
 
 /**
  *
  * @author ISHFAA TAJ
  */
-public class Calculator 
+public class Calculator
 {
-    int distance;
-    int time;
-    Calculator(int distance,int time)
+    int price;
+    int discount;
+    Calculator(int price,int discount)
     {
-        this.distance=distance;
-        this.time=time;
+        this.price=price;
+        this.discount=discount;
     }
     public void cal()
     {
-        int speed=distance/time;
-        System.out.println("Distance: "+distance+" km");
-        System.out.println("Time: "+time+" hr");
-        System.out.println("Speed: "+speed+" km/hr");
+       int finalPrice=price-(price*discount/100);
+        System.out.println("Original Price : "+price);
+        System.out.println("Discount : "+discount+" %");
+        System.out.println("Final Price : "+finalPrice);
     }
 }
