@@ -1,0 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package NotificationSystem;
+
+/**
+ *
+ * @author ISHFAA TAJ
+ */
+public class NotificationMain
+{
+    public static void main(String[] args)
+    {
+        Notifier en=new EmailNotifier();
+        Notifier sn=new SMSnotifier();
+        
+        en.send("Hi!");
+        sn.send("Hello!");
+    }
+}
