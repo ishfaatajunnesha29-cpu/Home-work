@@ -22,7 +22,7 @@ public class Display3 implements Runnable
             
             try
             {
-                Thread.sleep(3000);
+                Thread.sleep(300);
             }
             catch(InterruptedException obj)
             {
@@ -33,3 +33,4 @@ public class Display3 implements Runnable
         System.out.println();
     }
 }    
+
