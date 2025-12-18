@@ -21,7 +21,7 @@ public class Display2 implements Runnable
             char ch = message.charAt(i);
             try
             {
-                Thread.sleep(3000);
+                Thread.sleep(300);
             }
             catch(InterruptedException obj)
             {
@@ -32,3 +32,4 @@ public class Display2 implements Runnable
         System.out.println();
     }
 }
+
