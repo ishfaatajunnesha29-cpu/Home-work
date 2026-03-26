@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px; 
+        }
+        .container { display: flex; flex-direction: column; gap: 15px; max-width: 300px; }
+        button { cursor: pointer; padding: 8px; }
+    </style>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="name">
+    <button id="alertBtn">submit</button>
+
+<script>
+    let button = document.getElementById('alertBtn');
+    let input = document.getElementById('userInput');
+
+    button.onclick = function() {
+    alert("Entered Successfully"); 
+  };
+</script>
+
+<button id="colorButton">Enter</button>
+
+<script>
+    let colorButton = document.getElementById('colorButton');
+
+        colorButton.onclick = function() {
+            document.body.style.backgroundColor = "lightblue";
+        };
+</script>
+
+
+<button id="eventButton">Click Me!</button>
+
+<script>
+    let event = document.getElementById('eventButton');
+
+    event.addEventListener("click", () => {
+        alert("Button was clicked using addEventListener!");
+    });
+</script>
+</body>
+</html>
